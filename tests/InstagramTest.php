@@ -1,7 +1,7 @@
 <?php
 
-use InstagramScraper\Instagram;
-use InstagramScraper\Model\Media;
+use IgScrapper\Instagram;
+use IgScrapper\Model\Media;
 use phpFastCache\CacheManager;
 use PHPUnit\Framework\TestCase;
 
@@ -167,10 +167,10 @@ class InstagramTest extends TestCase
     {
         // https://www.instagram.com/p/BcVEzBTgqKh/
         $comment1 = self::$instagram->addComment('1663256735663694497', 'Cool!');
-        $this->assertInstanceOf('InstagramScraper\Model\Comment', $comment1);
+        $this->assertInstanceOf('IgScrapper\Model\Comment', $comment1);
 
         $comment2 = self::$instagram->addComment('1663256735663694497', '+1', $comment1);
-        $this->assertInstanceOf('InstagramScraper\Model\Comment', $comment2);
+        $this->assertInstanceOf('IgScrapper\Model\Comment', $comment2);
 
         self::$instagram->deleteComment('1663256735663694497', $comment2);
         $this->assertTrue(true, 'Return type ensures this assertion is never reached on failure');
