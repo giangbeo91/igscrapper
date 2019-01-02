@@ -47,11 +47,11 @@ $account = $instagram->getAccount('kevin');
 ### Using composer
 
 ```sh
-composer.phar require GiangBeo91/igscrapper
+composer.phar require giangbeo91/igscrapper
 ```
 or 
 ```sh
-composer require GiangBeo91/igscrapper
+composer require giangbeo91/igscrapper
 ```
 
 ### If you don't have composer
