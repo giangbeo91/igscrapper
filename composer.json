@@ -1,19 +1,16 @@
 {
   "name": "GiangBeo91/igscrapper",
-  "description": "Get user like and comment in media instagram",
-  "keywords": [
-    "instagram",
-    "scraper"
-  ],
+  "description": "Instagram",
   "type": "library",
   "homepage": "https://github.com/GiangBeo91/igscrapper",
   "license": "MIT",
   "authors": [
     {
-      "name": "GiangBeo",
+      "name": "Nguyen Giang",
       "email": "nguyentruonggiang91@gmail.com"
     }
   ],
+  "minimum-stability": "dev",
   "require": {
     "php": ">=5.4.0",
     "mashape/unirest-php": "3.0.*",
@@ -26,10 +23,7 @@
   },
   "autoload": {
     "psr-0": {
-      "InstagramScraper": "src"
+      "IgScrapper": "src"
     }
-  },
-  "support": {
-    "email": "nguyentruonggiang91@gmail.com"
   }
 }
